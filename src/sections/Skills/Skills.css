@@ -1,0 +1,58 @@
+.skills-light {
+    --hdr: rgb(56, 56, 56)
+}
+
+.skills-dark {
+    --hdr: white
+}
+
+.skills-header {
+    padding: 0rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 0;
+    color: var(--hdr);
+}
+
+.gradient {
+    background: linear-gradient(90deg, #a9fb5294, #8afba88e);
+    overflow: hidden;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.tag-buttons {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 4rem;
+}
+
+
+@media screen and (max-width: 920px) {
+    .skills-header {
+        font-size: 2rem;
+    }
+
+    .skills-icons {
+
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .tag-buttons {
+        overflow-x: scroll;
+        padding: 2rem 1rem;
+    }
+
+    .tag-buttons::-webkit-scrollbar {
+        display: none;
+    }
+
+}

@@ -1,0 +1,43 @@
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.preloader svg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 300px);
+
+}
+
+.preloader path {
+    fill: white;
+}
+
+.preloader span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    color: rgb(39, 39, 39);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    z-index: 2;
+}

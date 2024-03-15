@@ -1,0 +1,136 @@
+.navbar-light {
+    --nav-bg: white;
+    --link: #545454;
+    --active: #77e700;
+    --mob-bg: white;
+}
+
+.navbar-dark {
+    --nav-bg: #00000023;
+    --link: #d7d7d7;
+    --active: #77e700;
+    --mob-bg: black;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--link);
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    color: var(--link);
+    cursor: pointer;
+}
+
+.active {
+    color: var(--active);
+}
+
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--mob-bg);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    transform-origin: top;
+}
+
+
+.mobile-nav-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.mobile-nav .nav-link {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.mob-nav-li {
+    overflow: hidden;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--link);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.progress-bar {
+    height: 1rem;
+    transform-origin: left;
+    background-color: var(--active);
+}
+
+
+@media screen and (max-width: 920px) {
+    .navbar-list {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+
+}
